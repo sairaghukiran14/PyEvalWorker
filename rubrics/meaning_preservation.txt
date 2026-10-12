@@ -1,0 +1,17 @@
+# Rubric: Meaning Preservation (Version 1.0)
+# Criterion: Does the generated output preserve the precise semantic meaning, nuances, and intent of the source text?
+
+Objective:
+Evaluate semantic equivalence between a source text and translated / paraphrased output, especially where n-gram metrics like BLEU or ROUGE fail due to alternative phrasings or synonyms.
+
+Scoring Scale (1 to 5):
+- 5 (Identical Meaning): Perfect semantic preservation. All facts, implications, tone, and intent are captured accurately despite differences in wording.
+- 4 (Substantially Preserved): Meaning is preserved with negligible loss of nuance or slight stylistic variance that does not change factual understanding.
+- 3 (Partially Preserved): Main idea is preserved, but secondary details, conditions, or emotional tone are altered or lost.
+- 2 (Significantly Distorted): Noticeable changes in meaning, incorrect entities, or reversed relationships between concepts.
+- 1 (Meaning Inverted / Untrue to Source): Completely mistranslated, opposite meaning, or arbitrary fabrication unrelated to the source.
+
+Evaluation Procedure:
+1. Compare key propositions in the source against the output.
+2. Check for missing entities, altered predicates, or shifted intent.
+3. Assign a score from 1 to 5 with explicit explanation of any semantic drift.

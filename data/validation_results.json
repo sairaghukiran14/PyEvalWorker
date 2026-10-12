@@ -1,0 +1,310 @@
+{
+  "total_cases": 30,
+  "agreement_count": 30,
+  "agreement_percentage": 100.0,
+  "exact_matches": 28,
+  "exact_percentage": 93.33,
+  "mean_absolute_error": 0.07,
+  "cases": [
+    {
+      "id": "hl-01",
+      "rubric": "faithfulness",
+      "human_score": 5.0,
+      "judge_score": 5.0,
+      "diff": 0.0,
+      "agreed": true,
+      "judge_reasoning": "Output is fully supported by the provided context chunks.",
+      "human_reasoning": "Fully grounded in context. Every single claim is directly verified."
+    },
+    {
+      "id": "hl-02",
+      "rubric": "faithfulness",
+      "human_score": 2.0,
+      "judge_score": 2.0,
+      "diff": 0.0,
+      "agreed": true,
+      "judge_reasoning": "Output contains claims that contradict or are not found in the context chunks.",
+      "human_reasoning": "Hallucinated BERTScore and Azure, which are nowhere in the context."
+    },
+    {
+      "id": "hl-03",
+      "rubric": "faithfulness",
+      "human_score": 5.0,
+      "judge_score": 5.0,
+      "diff": 0.0,
+      "agreed": true,
+      "judge_reasoning": "Output is fully supported by the provided context chunks.",
+      "human_reasoning": "Completely faithful, simple paraphrase of directory to folder."
+    },
+    {
+      "id": "hl-04",
+      "rubric": "faithfulness",
+      "human_score": 1.0,
+      "judge_score": 2.0,
+      "diff": 1.0,
+      "agreed": true,
+      "judge_reasoning": "Output contains claims that contradict or are not found in the context chunks.",
+      "human_reasoning": "Direct contradiction. Context states 0.0, output claims 0.7 and creativity."
+    },
+    {
+      "id": "hl-05",
+      "rubric": "faithfulness",
+      "human_score": 5.0,
+      "judge_score": 5.0,
+      "diff": 0.0,
+      "agreed": true,
+      "judge_reasoning": "Output is fully supported by the provided context chunks.",
+      "human_reasoning": "Fully faithful to context."
+    },
+    {
+      "id": "hl-06",
+      "rubric": "faithfulness",
+      "human_score": 4.0,
+      "judge_score": 4.0,
+      "diff": 0.0,
+      "agreed": true,
+      "judge_reasoning": "Output is fully supported by the provided context chunks.",
+      "human_reasoning": "Core claim supported; minor common-sense inference on latency and cost."
+    },
+    {
+      "id": "hl-07",
+      "rubric": "faithfulness",
+      "human_score": 2.0,
+      "judge_score": 2.0,
+      "diff": 0.0,
+      "agreed": true,
+      "judge_reasoning": "Output contains claims that contradict or are not found in the context chunks.",
+      "human_reasoning": "Contradicts the context: claims 10 retries when context specifies retries once."
+    },
+    {
+      "id": "hl-08",
+      "rubric": "faithfulness",
+      "human_score": 1.0,
+      "judge_score": 2.0,
+      "diff": 1.0,
+      "agreed": true,
+      "judge_reasoning": "Output contains claims that contradict or are not found in the context chunks.",
+      "human_reasoning": "Completely fabricated claims about OAuth2 and RS256 not in context."
+    },
+    {
+      "id": "hl-09",
+      "rubric": "faithfulness",
+      "human_score": 5.0,
+      "judge_score": 5.0,
+      "diff": 0.0,
+      "agreed": true,
+      "judge_reasoning": "Output is fully supported by the provided context chunks.",
+      "human_reasoning": "Directly matches context facts."
+    },
+    {
+      "id": "hl-10",
+      "rubric": "faithfulness",
+      "human_score": 1.0,
+      "judge_score": 1.0,
+      "diff": 0.0,
+      "agreed": true,
+      "judge_reasoning": "Output contains claims that contradict or are not found in the context chunks.",
+      "human_reasoning": "Completely contradictory to explicit non-goal in context."
+    },
+    {
+      "id": "hl-11",
+      "rubric": "answer_relevance",
+      "human_score": 5.0,
+      "judge_score": 5.0,
+      "diff": 0.0,
+      "agreed": true,
+      "judge_reasoning": "Directly and accurately answers the question with clear details.",
+      "human_reasoning": "Direct, concise, and fully answers the question."
+    },
+    {
+      "id": "hl-12",
+      "rubric": "answer_relevance",
+      "human_score": 2.0,
+      "judge_score": 2.0,
+      "diff": 0.0,
+      "agreed": true,
+      "judge_reasoning": "Explains why context recall is important instead of how it works.",
+      "human_reasoning": "Explains why it is important rather than answering how it works."
+    },
+    {
+      "id": "hl-13",
+      "rubric": "answer_relevance",
+      "human_score": 5.0,
+      "judge_score": 5.0,
+      "diff": 0.0,
+      "agreed": true,
+      "judge_reasoning": "Directly and accurately answers the question with clear details.",
+      "human_reasoning": "Direct and exact answer to the question."
+    },
+    {
+      "id": "hl-14",
+      "rubric": "answer_relevance",
+      "human_score": 1.0,
+      "judge_score": 1.0,
+      "diff": 0.0,
+      "agreed": true,
+      "judge_reasoning": "The response is evasive or off-topic, failing to address the specific question asked.",
+      "human_reasoning": "Completely irrelevant filler about FastAPI; never mentions the port."
+    },
+    {
+      "id": "hl-15",
+      "rubric": "answer_relevance",
+      "human_score": 5.0,
+      "judge_score": 5.0,
+      "diff": 0.0,
+      "agreed": true,
+      "judge_reasoning": "Directly and accurately answers the question with clear details.",
+      "human_reasoning": "Directly and correctly answers the question."
+    },
+    {
+      "id": "hl-16",
+      "rubric": "answer_relevance",
+      "human_score": 2.0,
+      "judge_score": 2.0,
+      "diff": 0.0,
+      "agreed": true,
+      "judge_reasoning": "The response is evasive or off-topic, failing to address the specific question asked.",
+      "human_reasoning": "Gives general commentary on software testing instead of the command."
+    },
+    {
+      "id": "hl-17",
+      "rubric": "answer_relevance",
+      "human_score": 5.0,
+      "judge_score": 5.0,
+      "diff": 0.0,
+      "agreed": true,
+      "judge_reasoning": "Directly and accurately answers the question with clear details.",
+      "human_reasoning": "Gives the exact mathematical formula clearly."
+    },
+    {
+      "id": "hl-18",
+      "rubric": "answer_relevance",
+      "human_score": 3.0,
+      "judge_score": 3.0,
+      "diff": 0.0,
+      "agreed": true,
+      "judge_reasoning": "Addresses the concept of faithfulness, but fails to provide the requested mathematical formula.",
+      "human_reasoning": "Explains the goal, but does not provide the requested formula."
+    },
+    {
+      "id": "hl-19",
+      "rubric": "meaning_preservation",
+      "human_score": 5.0,
+      "judge_score": 5.0,
+      "diff": 0.0,
+      "agreed": true,
+      "judge_reasoning": "The candidate output preserves the exact semantic meaning and intent of the source.",
+      "human_reasoning": "Exact semantic equivalence with natural phrasing."
+    },
+    {
+      "id": "hl-20",
+      "rubric": "meaning_preservation",
+      "human_score": 1.0,
+      "judge_score": 1.0,
+      "diff": 0.0,
+      "agreed": true,
+      "judge_reasoning": "The output inverts the source statement or invents unrelated actions.",
+      "human_reasoning": "Completely inverted meaning and made up destructive action."
+    },
+    {
+      "id": "hl-21",
+      "rubric": "meaning_preservation",
+      "human_score": 5.0,
+      "judge_score": 5.0,
+      "diff": 0.0,
+      "agreed": true,
+      "judge_reasoning": "The candidate output preserves the exact semantic meaning and intent of the source.",
+      "human_reasoning": "Perfect meaning preservation."
+    },
+    {
+      "id": "hl-22",
+      "rubric": "meaning_preservation",
+      "human_score": 1.0,
+      "judge_score": 1.0,
+      "diff": 0.0,
+      "agreed": true,
+      "judge_reasoning": "The output inverts the source statement or invents unrelated actions.",
+      "human_reasoning": "Direct opposite of source statement."
+    },
+    {
+      "id": "hl-23",
+      "rubric": "meaning_preservation",
+      "human_score": 5.0,
+      "judge_score": 5.0,
+      "diff": 0.0,
+      "agreed": true,
+      "judge_reasoning": "The candidate output preserves the exact semantic meaning and intent of the source.",
+      "human_reasoning": "Equivalent meaning in CI context."
+    },
+    {
+      "id": "hl-24",
+      "rubric": "fluency",
+      "human_score": 5.0,
+      "judge_score": 5.0,
+      "diff": 0.0,
+      "agreed": true,
+      "judge_reasoning": "Flawless grammar, coherent structure, and natural professional tone.",
+      "human_reasoning": "Fluent, grammatically perfect sentence."
+    },
+    {
+      "id": "hl-25",
+      "rubric": "fluency",
+      "human_score": 2.0,
+      "judge_score": 2.0,
+      "diff": 0.0,
+      "agreed": true,
+      "judge_reasoning": "Disjointed word ordering and broken syntax.",
+      "human_reasoning": "Broken syntax and disjointed sentence structure."
+    },
+    {
+      "id": "hl-26",
+      "rubric": "fluency",
+      "human_score": 5.0,
+      "judge_score": 5.0,
+      "diff": 0.0,
+      "agreed": true,
+      "judge_reasoning": "Flawless grammar, coherent structure, and natural professional tone.",
+      "human_reasoning": "Clear, natural, and correct grammar."
+    },
+    {
+      "id": "hl-27",
+      "rubric": "fluency",
+      "human_score": 1.0,
+      "judge_score": 1.0,
+      "diff": 0.0,
+      "agreed": true,
+      "judge_reasoning": "Severe grammatical breakdown, duplicate words, and incoherent fragments.",
+      "human_reasoning": "Garbled word salad with duplicate articles and broken grammar."
+    },
+    {
+      "id": "hl-28",
+      "rubric": "fluency",
+      "human_score": 5.0,
+      "judge_score": 5.0,
+      "diff": 0.0,
+      "agreed": true,
+      "judge_reasoning": "Flawless grammar, coherent structure, and natural professional tone.",
+      "human_reasoning": "Coherent, complex sentence with proper subordination."
+    },
+    {
+      "id": "hl-29",
+      "rubric": "fluency",
+      "human_score": 3.0,
+      "judge_score": 3.0,
+      "diff": 0.0,
+      "agreed": true,
+      "judge_reasoning": "Grammatical subject-verb mismatch and awkward preposition usage.",
+      "human_reasoning": "Subject-verb agreement error ('Score are') and preposition error ('divide with'). Understandable."
+    },
+    {
+      "id": "hl-30",
+      "rubric": "fluency",
+      "human_score": 5.0,
+      "judge_score": 5.0,
+      "diff": 0.0,
+      "agreed": true,
+      "judge_reasoning": "Flawless grammar, coherent structure, and natural professional tone.",
+      "human_reasoning": "Completely fluent and professional tone."
+    }
+  ]
+}

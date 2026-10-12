@@ -1,0 +1,18 @@
+# Rubric: Answer Relevance (Version 1.0)
+# Criterion: Does the answer directly address the user's question without evasiveness or irrelevant filler?
+
+Objective:
+Determine how directly, completely, and appropriately the answer addresses the specific question asked by the user.
+
+Scoring Scale (1 to 5):
+- 5 (Direct & Comprehensive): Directly answers the user's question completely, staying strictly on topic without irrelevant digressions or evasiveness.
+- 4 (Relevant with Minor Digression): Directly answers the question, but includes minor tangential details or slightly unnecessary verbosity.
+- 3 (Partially Relevant): Answers part of the question, or provides an overly broad response that leaves key parts of the user question unaddressed.
+- 2 (Mostly Irrelevant / Evasive): Misses the core intent of the question, focuses on incidental details, or offers vague boilerplate without answering.
+- 1 (Completely Irrelevant / Refusal to answer on-topic): Completely fails to address the question, answers a different question, or provides gibberish.
+
+Evaluation Procedure:
+1. Identify the core question and intent of the user.
+2. Check if the answer provides the information requested.
+3. Penalize evasive or off-topic information.
+4. Assign a score from 1 to 5 and summarize reasoning.

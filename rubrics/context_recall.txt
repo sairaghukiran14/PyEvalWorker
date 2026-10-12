@@ -1,0 +1,18 @@
+# Rubric: Context Recall (Version 1.0)
+# Criterion: Did the retrieved context include all necessary information to answer the question, as established by the ground truth / reference answer?
+
+Objective:
+Evaluate retrieval completeness by measuring the fraction of reference answer facts/claims that are present across the retrieved chunks.
+
+Scoring Scale (1 to 5):
+- 5 (Complete Recall): 100% of the facts/claims in the reference answer can be attributed to the retrieved context chunks.
+- 4 (High Recall): ~75-99% of essential claims in the reference answer are found in the chunks. Only minor auxiliary details missing.
+- 3 (Moderate Recall): ~50-74% of the reference claims are present in chunks; key pieces of information are missing.
+- 2 (Low Recall): ~25-49% of the reference claims are present; context lacks major critical details needed to answer.
+- 1 (No Recall): <25% or 0% of the reference claims are found in retrieved chunks.
+
+Evaluation Procedure:
+1. Break down the reference answer into key factual assertions.
+2. For each assertion, verify if it can be inferred or directly found in any retrieved chunk.
+3. Calculate the coverage ratio.
+4. Rate 1 to 5 and summarize missing points.

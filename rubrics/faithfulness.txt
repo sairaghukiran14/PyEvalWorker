@@ -1,0 +1,18 @@
+# Rubric: Faithfulness / Groundedness (Version 1.0)
+# Criterion: Is every factual claim in the answer directly supported by the retrieved context chunks?
+
+Objective:
+Evaluate whether the candidate answer contains any hallucinations, ungrounded inferences, or claims unsupported by the provided context chunks.
+
+Scoring Scale (1 to 5):
+- 5 (Completely Faithful): Every claim in the answer is directly supported by the context chunks. Zero hallucinations, embellishments, or outside knowledge introduced.
+- 4 (Mostly Faithful): The answer is substantially supported. At most 1 minor trivial inference that is natural and does not alter factual correctness.
+- 3 (Partially Faithful): The core point is supported, but contains 1-2 claims not mentioned in the context, or mild over-generalization.
+- 2 (Mostly Unfaithful): Multiple key claims are not supported by the context or contradict the context chunks.
+- 1 (Completely Hallucinated / Contradictory): The answer contradicts the context or invents substantial facts not present in any provided chunk.
+
+Evaluation Procedure:
+1. Extract all atomic factual claims from the candidate answer.
+2. For each claim, check if it can be directly verified from the provided chunks.
+3. Compute the ratio of supported claims to total claims.
+4. Provide a structured explanation listing supported claims, unsupported claims, and reasoning.

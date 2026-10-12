@@ -1,0 +1,16 @@
+# Rubric: Fluency (Version 1.0)
+# Criterion: Is the text grammatically correct, natural, coherent, and free of disfluencies or artifacts?
+
+Objective:
+Evaluate language generation quality regardless of factual accuracy.
+
+Scoring Scale (1 to 5):
+- 5 (Flawless): Native-level fluency, perfect grammar, natural sentence flow, and flawless vocabulary.
+- 4 (Good Fluency): Minor minor punctuation or awkward phrasing that does not impede comprehension.
+- 3 (Understandable with Errors): Noticeable grammatical flaws, repetitions, or awkward constructions, but the general message is clear.
+- 2 (Poor Fluency): Choppy, broken syntax, frequent errors, or repetitive loops making reading difficult.
+- 1 (Incoherent): Severe word salad, corrupted tokens, or disjointed fragments.
+
+Evaluation Procedure:
+1. Examine syntax, grammar, spelling, and cohesion.
+2. Assign a score from 1 to 5 with detailed feedback.

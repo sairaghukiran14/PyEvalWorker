@@ -1,0 +1,17 @@
+# Rubric: Context Precision (Version 1.0)
+# Criterion: Are the retrieved chunks relevant to the question, and are relevant chunks ranked higher than irrelevant ones?
+
+Objective:
+Evaluate retrieval quality: whether retrieved chunks contain useful signal for the question, and whether high-quality chunks appear at the top of the retrieval list.
+
+Scoring Scale (1 to 5):
+- 5 (Optimal Retrieval & Ranking): Top retrieved chunks are highly relevant; minimal or zero noise chunks; top ranks contain all necessary information.
+- 4 (Good Retrieval with Minor Noise): Top 1-2 chunks are relevant, with a low-relevance chunk appearing lower down.
+- 3 (Moderate Ranking / Mixed Precision): Relevant information is present, but buried after irrelevant chunks, or signal-to-noise ratio is around 50%.
+- 2 (Poor Retrieval): Most chunks are irrelevant; only 1 weak chunk has partial relevance.
+- 1 (Completely Irrelevant Context): None of the retrieved chunks provide information relevant to answering the question.
+
+Evaluation Procedure:
+1. For each retrieved chunk at index k (1-indexed), assess whether it contains information that helps answer the question.
+2. Weight relevance by ranking position using Precision@k.
+3. Score 1 to 5 and explain ranking quality.
